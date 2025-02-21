@@ -1,0 +1,201 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=1.4cm]{geometry}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.15in}
+ \addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Large \scshape Louis John Massingham} \\[2mm]
+    \footnotesize \raisebox{-0.1\height}
+    \faPhone\ \underline{(+44) 07873397237} ~ 
+    {\faEnvelope\  \underline{louisjohnmassingham@gmail.com}} ~ 
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/louis-massingham-2909a5318/}{linkedin.com/in/louis-massingham-2909a5318}}  ~
+    {\faGithub\ \underline{\href{https://github.com/massengineer}{github.com/massengineer}} ~
+    {\faBriefcase\ \underline{\href{https://massengineer.github.io}{https://massengineer.github.io}}
+    \vspace{-8pt}
+\end{center}
+
+ %-----------EDUCATION-----------
+\section{Education} \\[1mm]
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University}{Expected Graduation: June 2027}
+      {MEng Mechatronic and Robotic Engineering | With Industrial Year
+      }{University of Birmingham}
+  \resumeSubHeadingListEnd
+    \resumeItemListStart
+        \resumeItem {UKESF Scholar | \textbf{Expected: 1st Class}}
+        \vspace{-7pt}
+        \resumeItem {Courses: \textbf{Engineering Mathematics 1 (88\%)}, \textbf{Engineering Mathematics 2 (93\%)}, Microprocessors and Control Systems, Digital Electronics and Electrical Machines, Electronic Circuits and Devices and Electromagnetics, Intro. to Computing for Engineers}
+    \resumeItemListEnd
+    \vspace{-12pt}
+%-----------Experience---------------
+\section{Work Experience}
+    \resumeSubHeadingListStart
+                \resumeSubheading{Chess Dynamics Ltd.}{August 2024 -- Present}{Electronic Engineer Placement}{Horsham} 
+                \resumeItemListStart
+                    \resumeItem{Designed \textbf{PCBs with Embedded Software}, including \textbf{Control boards with CPUs} and \textbf{Motor Control}, to satisfy engineering requirements and generate robust solutions that are reusable, improving cost efficiency per unit}
+                    \resumeItem{Analysed \textbf{500+} electronic and software requirements monthly provided by customers}
+                    \resumeItem{Researched and found alternatives for obsolete parts, on one occasion saving the company \textbf{\$21,500 per unit} and decreasing project lead times}
+                    \resumeItem{Analysed \textbf{5000+} lines of C++ code to further understand \textbf{6 PCBs} that I \textbf{tested}}
+                    \resumeItem{Designed and integrated \textbf{100+} system communications cables to transmit/ receive data between the user and the system's CPU, focusing on \textbf{reduction of EM radiation and signal loss}}
+                    \resumeItem{Carried out a \textbf{1 week} introduction project using a RaspberryPi and Python to understand basic image tracking and endstops for the company's systems}
+                    \resumeItem{Automated some of my day-to-day work with Python and the Quicksort algorithm}
+                    \resumeItemListEnd
+            \resumeSubheading{Spark Tutoring}{October 2024 -- March 2025}{Maths \& Science Specialist}{Remote} 
+                \resumeItemListStart
+                    \resumeItem{Designed \textbf{50+ learning resources}, strategically leading students to success, increasing test scores by up to \textbf{223.33\%}, with most students achieving a \textbf{60\%} improvement}
+                    \resumeItem{Achieved a \textbf{98\%} satisfaction rate with parents}
+                    \resumeItem{Crafted \textbf{weekly} plans with my customers}
+                    \resumeItem{Taught \textbf{5 STEM subjects} including A Level Further Maths}
+                    \resumeItemListEnd
+            \resumeSubheading{Autonomous Tutor}{Feb 2024 -- Present}{Maths Specialist}{Remote}
+                \resumeItemListStart
+                    \resumeItem{Converted \textbf{33.3\%} of my customers at my previous company to join me in my self-employed tutoring venture}
+                    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects} 
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+            {\textbf{{SyncMove Ltd.}} $|$ \emph{\href{https://www.syncmove.co.uk/}{syncmove.co.uk}}}{JavaScript $|$ NodeJS $|$ ExpressJS $|$ MongoDB $|$ Render $|$ GCS}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Worked on my friend's fitness tech start-up application}
+            \resumeItem{Developed and deployed backend web application features, such as \textbf{monthly leaderboards with previous months' data} that enhanced experiences of \textbf{50+ users} and still growing week by week}
+            \resumeItem{Utilized \textbf{MongoDB} using both \textbf{Atlas} and the \textbf{Compass GUI} for data storage, \textbf{NodeJS and ExpressJS} for a \textbf{CRUD API} backend, \textbf{Postman} for testing, and \textbf{Render} for the deployment of the app}
+          \resumeItemListEnd
+ \vspace{-20pt}
+ \resumeProjectHeading
+            {\textbf{{Stock Price Predictor}} $|$ \emph{\href{https://github.com/massengineer/First-Stock-Price-Prediction}{Source Code}}}{Pandas $|$ Scikit-Learn $|$ Matplotlib $|$ TensorFlow $|$ Python}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Used guidance for my first ever project using ChatGPT for \textbf{prompt engineering}, library documentation, \textbf{Jupyter Notebooks interactive window for improved usability}, and \textbf{Anaconda} to manage environments. These are all \textbf{essential} for \textbf{Machine Learning in 2025}}
+          \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-28pt}
+%-----------LEADERSHIP-----------
+\section{Leadership} 
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+                   \resumeProjectHeading
+            {\textbf{{Project Manager}} $|$ {University Integrated Design Projects}}{Semester 2 2023 \& Semester 2 2024}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Led \textbf{2 groups of 7 people} from multidisciplinary engineering practices}
+            \resumeItem{Organised, listened, and motivated teams in regular meetings to achieve an overall \textbf{1st Class} in both IDPs}
+          \resumeItemListEnd
+          \resumeSubHeadingListEnd
+ \vspace{-12pt}
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{   
+     \textbf{Languages}{: Python, JavaScript, HTML, CSS, C, MATLAB, Arduino Language} \\[1mm]
+     \textbf{Developer Tools}{: Postman, MongoDB, Git, Jira} \\[1mm]
+     \textbf{Libraries/Frameworks}{: NodeJS, ExpressJS, Pandas, Numpy, Matplotlib, Tailwind CSS, Mongoose, ReactJS, Vite} \\ [1mm]
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+ \vspace{3pt}
+\vspace{10pt}
+
+\vspace{-15pt}
+
+
+
+\end{document}
